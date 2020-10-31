@@ -1,0 +1,126 @@
+//font import
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// variables
+$opacity:0.7;
+$pink : rgba(199, 32, 91,$opacity);
+$pink-solid : rgb(214, 24, 88);
+$purple : rgba(169, 33, 142,$opacity);
+$purple-dark : rgba(133, 14, 109,$opacity);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',
+    sans-serif;
+    color: white;
+    background-image: url('https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=596&q=80');
+    background-repeat: no-repeat;
+    width: 596px;
+    height: 842px;
+    position: relative;
+}
+
+.flex{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+
+
+.title{
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    h1{
+        font-weight: bold;
+        width:80%;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    .lite-sm{
+        background-color: $pink;
+        .margin-top{
+            margin-top: 15em;
+        }
+        p{
+            text-align: right;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+        .btn{
+            display: block;
+            color:#fff;
+            text-decoration: none;
+            padding: 0.5em;
+            margin: 3em 1em 1em 1em;
+            border: 2px #fff solid;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            transition: 0.3s;
+            background-color: $pink-solid;
+        }
+    }
+    .lite-lg{
+        background-color:$purple;
+        .content{
+            padding: 0em 1.5em 5em 1.5em;
+        }
+        .margin-top {
+            margin-top: 4.6em;
+        }
+        .date-wrapper{
+            display: flex;
+            justify-content: end;
+        }
+        .date-box{
+            font-weight: bold;
+            margin-right: 2.5em;
+            padding: 1em;
+            background-color:$purple-dark;
+            text-align: center;
+            width: max-content;
+            span{
+                display: block;
+            }
+            .date{
+                font-size: 46px;
+            }
+            .month{
+                font-size: 26.5px;
+            }
+            .year{
+                font-size: 23px;
+            }
+        }
+        .border-top{
+            border-top: 2px #fff solid;
+        }
+    }
+}
+
+.footer{
+    flex-grow : 1;
+    background-color:$pink-solid;
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        padding: 4rem;
+    }
+}
+

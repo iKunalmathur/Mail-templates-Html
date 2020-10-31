@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=596&q=80");
+  background-repeat: no-repeat;
+  width: 596px;
+  height: 842px;
+  position: relative;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 3%;
+  left: 10%;
+}
+
+.title h1 {
+  font-weight: bold;
+  width: 80%;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.grid .lite-sm {
+  background-color: rgba(199, 32, 91, 0.7);
+}
+
+.grid .lite-sm .margin-top {
+  margin-top: 15em;
+}
+
+.grid .lite-sm p {
+  text-align: right;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.grid .lite-sm .btn {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 3em 1em 1em 1em;
+  border: 2px #fff solid;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.grid .lite-sm .btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #d61858;
+}
+
+.grid .lite-lg {
+  background-color: rgba(169, 33, 142, 0.7);
+}
+
+.grid .lite-lg .content {
+  padding: 0em 1.5em 5em 1.5em;
+}
+
+.grid .lite-lg .margin-top {
+  margin-top: 4.6em;
+}
+
+.grid .lite-lg .date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.grid .lite-lg .date-box {
+  font-weight: bold;
+  margin-right: 2.5em;
+  padding: 1em;
+  background-color: rgba(133, 14, 109, 0.7);
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.grid .lite-lg .date-box span {
+  display: block;
+}
+
+.grid .lite-lg .date-box .date {
+  font-size: 46px;
+}
+
+.grid .lite-lg .date-box .month {
+  font-size: 26.5px;
+}
+
+.grid .lite-lg .date-box .year {
+  font-size: 23px;
+}
+
+.grid .lite-lg .border-top {
+  border-top: 2px #fff solid;
+}
+
+.footer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #d61858;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 4rem;
+}
+/*# sourceMappingURL=main.css.map */
